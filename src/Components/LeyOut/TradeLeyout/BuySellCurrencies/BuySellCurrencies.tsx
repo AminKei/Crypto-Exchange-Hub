@@ -6,13 +6,14 @@ import Button from "../../../BasedComponents/BaseUi/Button/Button";
 
 const { Option } = Select;
 
-const DollerPrice = 81000;
+let DollerPrice = 85000;
+let WalletCPK = 12000
 
 const BuySellCurrencies = () => {
   const [form] = Form.useForm();
   const [selectedCurrency, setSelectedCurrency] = useState<string | null>(null);
   const [amount, setAmount] = useState<number>(0);
-  const [walletBalance, setWalletBalance] = useState<number>(10000);
+  const [walletBalance, setWalletBalance] = useState<number>(WalletCPK);
   const [currencyInventory, setCurrencyInventory] = useState<number>(0);
   const [spentAmount, setSpentAmount] = useState<number>(0);
   const [currentPrice, setCurrentPrice] = useState<number | null>(null);

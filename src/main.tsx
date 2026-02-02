@@ -12,7 +12,6 @@ import Wallet from "./Pages/Wallet/Wallet.tsx";
 import SignUp from "./Pages/SignUp/SignUp.tsx";
 import { StrictMode } from "react";
 import Currency from "./Pages/Currency/Currency.tsx";
-import Playground from "./Playground/Playground.tsx";
 import NotFound from "./Components/NotFound/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -30,7 +29,6 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/wallet" element={<Wallet />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/currency/:coin" element={<Currency />} />
-            <Route path="/playground" element={<Playground />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QueryClientProvider>
