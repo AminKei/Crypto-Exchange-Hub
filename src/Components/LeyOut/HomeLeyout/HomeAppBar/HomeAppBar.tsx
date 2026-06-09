@@ -5,7 +5,7 @@ const HomeAppBar = () => {
     <div className="flex w-full lg:justify-evenly justify-between items-center p-5  gap-1 bg-[#ffffff] border-b cursor-pointer ">
       <div className="flex items-center">
         <span className="text-black font-bold text-lg ml-1">Crypto</span>
-        <span className="text-orange-500 font-bold text-lg">Hub</span>
+        <span className="text-orange-500 font-bold text-lg">Hub </span>
       </div>
 
       <div className="justify-between items-center gap-4 lg:flex hidden ">
@@ -15,7 +15,7 @@ const HomeAppBar = () => {
             className="text-gray-700 hover:text-orange-500"
             onClick={() => (document.location = "/traderoom")}
           >
-            Exchange
+            Exchange 
           </a>
           <a
             href="#"
