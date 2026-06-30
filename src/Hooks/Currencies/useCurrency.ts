@@ -4,7 +4,7 @@ import { getProductById } from "../../Queries/Currencies";
 
 export const useCurrency = (coin?: string) => {
   const { data, error, isLoading } = useQuery({
-    queryKey: [QueryKey.CURRENCIES],
+    queryKey: [QueryKey.CURRENCIES, coin],
     queryFn: () => getProductById(coin),
     enabled: !!coin,
     staleTime: StaleTime.CURRENCIES_TIME,
